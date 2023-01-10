@@ -27,5 +27,8 @@ fn trans(i: usize, j: usize, minefield: &[&str]) -> char {
     }
 }
 fn main() {
-    println!("hello world")
+    let words = ["alpha", "beta", "gamma"];
+    let merged: String = words.iter().flat_map(|s| s.chars()).collect();
+
+    println!("{:?}", merged)
 }
